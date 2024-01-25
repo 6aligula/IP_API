@@ -1,0 +1,79 @@
+{
+    "ip": "86.127.245.219",
+    "hostname": "86-127-245-219.digimobil.es",
+    "type": "ipv4",
+    "continent_code": "EU",
+    "continent_name": "Europe",
+    "country_code": "ES",
+    "country_name": "Spain",
+    "region_code": "MD",
+    "region_name": "Madrid",
+    "city": "Alcobendas",
+    "zip": "28100",
+    "latitude": 40.516151428222656,
+    "longitude": -3.6497199535369873,
+    "location": {
+        "geoname_id": 3130583,
+        "capital": "Madrid",
+        "languages": [
+            {
+                "code": "es",
+                "name": "Spanish",
+                "native": "Espa\u00f1ol"
+            },
+            {
+                "code": "eu",
+                "name": "Basque",
+                "native": "Euskara"
+            },
+            {
+                "code": "ca",
+                "name": "Catalan",
+                "native": "Catal\u00e0"
+            },
+            {
+                "code": "gl",
+                "name": "Galician",
+                "native": "Galego"
+            },
+            {
+                "code": "oc",
+                "name": "Occitan",
+                "native": "Occitan"
+            }
+        ],
+        "country_flag": "https://assets.ipstack.com/flags/es.svg",
+        "country_flag_emoji": "\ud83c\uddea\ud83c\uddf8",
+        "country_flag_emoji_unicode": "U+1F1EA U+1F1F8",
+        "calling_code": "34",
+        "is_eu": true
+    },
+    "time_zone": {
+        "id": "Europe/Madrid",
+        "current_time": "2024-01-24T20:29:41+01:00",
+        "gmt_offset": 3600,
+        "code": "CET",
+        "is_daylight_saving": false
+    },
+    "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "plural": "euros",
+        "symbol": "\u20ac",
+        "symbol_native": "\u20ac"
+    },
+    "connection": {
+        "asn": 57269,
+        "isp": "Digi Spain Telecom s.l.u."
+    },
+    "security": {
+        "is_proxy": false,
+        "proxy_type": null,
+        "is_crawler": false,
+        "crawler_name": null,
+        "crawler_type": null,
+        "is_tor": false,
+        "threat_level": "low",
+        "threat_types": null
+    }
+}

@@ -21,7 +21,7 @@
                </image>
             </ImageView>
             <TextField fx:id="ipText" />
-            <Button fx:id="checkIpButton" defaultButton="true" mnemonicParsing="false" text="Check IP" />
+            <Button fx:id="checkIpButton" onAction="#onCheckIpAction" defaultButton="true" mnemonicParsing="false" text="Check IP" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

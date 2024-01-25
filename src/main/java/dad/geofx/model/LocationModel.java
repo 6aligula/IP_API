@@ -5,52 +5,159 @@ public class LocationModel {
     private double latitude;
     private double longitude;
     private String city;
-    private String state;
-    private String zipCode;
-    private String country;
-    private String language;
-    private String timeZone;
+    private String country_name;
     private String callingCode;
-    private String currency;
+    private String zip;
+    private Currency currency;
+    private Location location;
+    private Time_zone time_zone;
 
-    public String getState() {
-        return state;
+    public class Currency {
+        private String code;
+        private String name;
+        private String plural;
+        private String symbol;
+        private String symbol_native;
+
+        @Override
+        public String toString() {
+            return "Currency{" +
+                    "code='" + code + '\'' +
+                    ", name='" + name + '\'' +
+                    ", plural='" + plural + '\'' +
+                    ", symbol='" + symbol + '\'' +
+                    ", symbol_native='" + symbol_native + '\'' +
+                    '}';
+        }
+
+        public String getCode() {
+            return code;
+        }
+
+        public void setCode(String code) {
+            this.code = code;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getPlural() {
+            return plural;
+        }
+
+        public void setPlural(String plural) {
+            this.plural = plural;
+        }
+
+        public String getSymbol() {
+            return symbol;
+        }
+
+        public void setSymbol(String symbol) {
+            this.symbol = symbol;
+        }
+
+        public String getSymbolNative() {
+            return symbol_native;
+        }
+
+        public void setSymbolNative(String symbol_native) {
+            this.symbol_native = symbol_native;
+        }
+
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public static class Location {
+        private String country_flag;
+        private String calling_code;
+
+        public String getCountryFlag() {
+            return country_flag;
+        }
+
+        public void setCountryFlag(String country_flag) {
+            this.country_flag = country_flag;
+        }
+
+        public String getCalling_code() {
+            return calling_code;
+        }
+
+        public void setCalling_code(String calling_code) {
+            this.calling_code = calling_code;
+        }
+
+        @Override
+        public String toString() {
+            return "Location{" +
+                    "country_flag='" + country_flag + '\'' +
+                    ", calling_code='" + calling_code + '\'' +
+                    '}';
+        }
+
     }
 
-    public String getZipCode() {
-        return zipCode;
+    public static class Time_zone {
+        private String code;
+
+        public String getCode() {
+            return code;
+        }
+
+        public void setCode(String code) {
+            this.code = code;
+        }
+
+        public String toString() {
+            return "Time_zone{" +
+                    "code='" + code + '\'' +
+                    '}';
+        }
+      
     }
 
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
+    public Time_zone getTime_zone() {
+        return time_zone;
     }
 
-    public String getCountry() {
-        return country;
+    public void setTime_zone(Time_zone time_zone) {
+        this.time_zone = time_zone;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    @Override
+    public String toString() {
+        return "LocationModel{" +
+                "latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", city='" + city + '\'' +
+                ", country_name='" + country_name + '\'' +
+                ", currency=" + currency +
+                ", location=" + location +
+                ", time_zone=" + time_zone +
+                '}';
     }
 
-    public String getLanguage() {
-        return language;
+    // Constructor, getters y setters para cada variable.
+
+    public String getZip() {
+        return zip;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
+    public void setZip(String zip) {
+        this.zip = zip;
     }
 
-    public String getTimeZone() {
-        return timeZone;
+    public String getCountryName() {
+        return country_name;
     }
 
-    public void setTimeZone(String timeZone) {
-        this.timeZone = timeZone;
+    public void setCountryName(String country_name) {
+        this.country_name = country_name;
     }
 
     public String getCallingCode() {
@@ -60,16 +167,6 @@ public class LocationModel {
     public void setCallingCode(String callingCode) {
         this.callingCode = callingCode;
     }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
-    // Constructor, getters y setters para cada variable.
 
     public double getLatitude() {
         return latitude;
